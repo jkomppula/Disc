@@ -1,0 +1,13 @@
+name=Ar
+
+avgCharge=9
+
+chargeFWHM=4.5
+
+protons=18
+
+isotopes={
+36 36 0.3365
+38 38 0.0632
+40 40 99.6003
+}

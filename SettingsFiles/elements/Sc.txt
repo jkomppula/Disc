@@ -1,0 +1,11 @@
+name=Sc
+
+avgCharge=10.5
+
+chargeFWHM=5.25
+
+protons=21
+
+isotopes={
+45 45 100
+}

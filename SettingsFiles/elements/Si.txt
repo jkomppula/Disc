@@ -1,0 +1,13 @@
+name=Si
+
+avgCharge=7
+
+chargeFWHM=3.5
+
+protons=14
+
+isotopes={
+28 28 92.2297
+29 29 4.6832
+30 30 3.0872
+}

@@ -1,0 +1,11 @@
+name=Nb
+
+avgCharge=20.5
+
+chargeFWHM=10.25
+
+protons=41
+
+isotopes={
+93 93 100
+}

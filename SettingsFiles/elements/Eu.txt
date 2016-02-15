@@ -1,0 +1,12 @@
+name=Eu
+
+avgCharge=31.5
+
+chargeFWHM=15.75
+
+protons=63
+
+isotopes={
+151 151 47.81
+153 153 52.19
+}

@@ -1,0 +1,14 @@
+name=Cr
+
+avgCharge=12
+
+chargeFWHM=6
+
+protons=24
+
+isotopes={
+50 50 4.345
+52 52 83.789
+53 53 9.501
+54 54 2.365
+}

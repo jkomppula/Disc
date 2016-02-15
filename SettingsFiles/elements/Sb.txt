@@ -1,0 +1,11 @@
+name=Sb
+
+avgCharge=26.5
+
+chargeFWHM=13.25
+
+protons=53
+
+isotopes={
+127 127 100
+}

@@ -1,0 +1,12 @@
+name=Ta
+
+avgCharge=36.5
+
+chargeFWHM=18.25
+
+protons=73
+
+isotopes={
+180 180 0.012
+181 181 99.988
+}

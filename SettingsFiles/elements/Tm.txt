@@ -1,0 +1,11 @@
+name=Tm
+
+avgCharge=34.5
+
+chargeFWHM=17.25
+
+protons=69
+
+isotopes={
+169 169 100
+}

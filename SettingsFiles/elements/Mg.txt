@@ -1,0 +1,13 @@
+name=Mg
+
+avgCharge=6
+
+chargeFWHM=3
+
+protons=12
+
+isotopes={
+24 24 78.99
+25 25 10
+26 26 11.01
+}

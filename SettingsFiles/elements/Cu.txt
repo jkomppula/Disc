@@ -1,0 +1,12 @@
+name=Cu
+
+avgCharge=14.5
+
+chargeFWHM=7.25
+
+protons=29
+
+isotopes={
+63 63 69.17
+65 65 30.83
+}

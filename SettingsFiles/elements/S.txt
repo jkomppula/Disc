@@ -1,0 +1,14 @@
+name=S
+
+avgCharge=8
+
+chargeFWHM=4
+
+protons=16
+
+isotopes={
+32 32 31.9721
+33 33 32.9715
+34 34 33.9679
+36 36 35.9671
+}

@@ -1,0 +1,11 @@
+name=Mn
+
+avgCharge=12.5
+
+chargeFWHM=6.25
+
+protons=25
+
+isotopes={
+54 54 100
+}

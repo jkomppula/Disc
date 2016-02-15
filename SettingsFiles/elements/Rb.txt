@@ -1,0 +1,12 @@
+name=Rb
+
+avgCharge=18.5
+
+chargeFWHM=9.25
+
+protons=37
+
+isotopes={
+85 85 72.17
+87 87 27.83
+}

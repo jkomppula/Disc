@@ -1,0 +1,12 @@
+name=B
+
+avgCharge=2.5
+
+chargeFWHM=1.25
+
+protons=5
+
+isotopes={
+10 10 19.9
+11 11 80.1
+}

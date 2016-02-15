@@ -1,0 +1,12 @@
+name=Li
+
+avgCharge=1.5
+
+chargeFWHM=0.75
+
+protons=3
+
+isotopes={
+6 6 7.59
+7 7 92.41
+}

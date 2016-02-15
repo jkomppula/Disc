@@ -1,0 +1,11 @@
+name=As
+
+avgCharge=16.5
+
+chargeFWHM=8.25
+
+protons=33
+
+isotopes={
+75 75 100
+}

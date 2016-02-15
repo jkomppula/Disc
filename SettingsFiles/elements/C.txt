@@ -1,0 +1,12 @@
+name=C
+
+avgCharge=3
+
+chargeFWHM=1.5
+
+protons=6
+
+isotopes={
+12 12 98.93
+13 13 1.07
+}

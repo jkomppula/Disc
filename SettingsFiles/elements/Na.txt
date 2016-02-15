@@ -1,0 +1,11 @@
+name=Na
+
+avgCharge=5.5
+
+chargeFWHM=2.75
+
+protons=11
+
+isotopes={
+23 23 100
+}

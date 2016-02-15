@@ -1,0 +1,14 @@
+name=Ce
+
+avgCharge=29
+
+chargeFWHM=14.5
+
+protons=58
+
+isotopes={
+136 136 0.185
+138 138 0.251
+140 140 88.45
+142 142 11.114
+}

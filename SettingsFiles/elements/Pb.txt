@@ -1,0 +1,14 @@
+name=Pb
+
+avgCharge=41
+
+chargeFWHM=20.5
+
+protons=82
+
+isotopes={
+204 204 1.4
+206 206 24.1
+207 207 22.1
+208 208 53.4
+}

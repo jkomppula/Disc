@@ -1,0 +1,12 @@
+name=Lu
+
+avgCharge=35.5
+
+chargeFWHM=17.75
+
+protons=71
+
+isotopes={
+175 175 97.41
+176 176 2.59
+}

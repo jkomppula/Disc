@@ -1,0 +1,15 @@
+name=Zn
+
+avgCharge=15
+
+chargeFWHM=7.5
+
+protons=30
+
+isotopes={
+64 64 48.63
+66 66 27.9
+67 67 4.1
+68 68 18.75
+70 70 0.62
+}

@@ -1,0 +1,13 @@
+name=Ne
+
+avgCharge=5
+
+chargeFWHM=2.5
+
+protons=10
+
+isotopes={
+20 20 90.48
+21 21 0.27
+22 22 9.25
+}

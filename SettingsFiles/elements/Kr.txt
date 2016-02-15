@@ -1,0 +1,16 @@
+name=Kr
+
+avgCharge=18
+
+chargeFWHM=9
+
+protons=36
+
+isotopes={
+78 78 0.35
+80 80 2.28
+82 82 11.58
+83 83 11.49
+84 84 57
+86 86 17.3
+}

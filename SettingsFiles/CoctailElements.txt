@@ -1,0 +1,14 @@
+H
+He
+C
+N
+O
+Ne
+Al
+Si
+Cl
+Ar
+Cr
+Fe
+Kr
+Xe

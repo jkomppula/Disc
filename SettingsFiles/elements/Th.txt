@@ -1,0 +1,11 @@
+name=Th
+
+avgCharge=45
+
+chargeFWHM=22.5
+
+protons=90
+
+isotopes={
+232 232 100
+}

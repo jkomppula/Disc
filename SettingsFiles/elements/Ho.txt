@@ -1,0 +1,11 @@
+name=Ho
+
+avgCharge=33.5
+
+chargeFWHM=16.75
+
+protons=67
+
+isotopes={
+165 165 100
+}

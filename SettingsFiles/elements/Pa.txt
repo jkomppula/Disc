@@ -1,0 +1,11 @@
+name=Pa
+
+avgCharge=45.5
+
+chargeFWHM=22.75
+
+protons=91
+
+isotopes={
+231 231 100
+}

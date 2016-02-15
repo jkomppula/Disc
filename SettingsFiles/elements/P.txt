@@ -1,0 +1,11 @@
+name=P
+
+avgCharge=7.5
+
+chargeFWHM=3.75
+
+protons=15
+
+isotopes={
+31 31 100
+}

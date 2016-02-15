@@ -1,0 +1,13 @@
+name=U
+
+avgCharge=46
+
+chargeFWHM=23
+
+protons=92
+
+isotopes={
+234 234 0.0055
+235 235 0.72
+238 238 99.2745
+}

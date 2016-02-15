@@ -1,0 +1,12 @@
+name=He
+
+avgCharge=1
+
+chargeFWHM=0.5
+
+protons=2
+
+isotopes={
+3 3 0.000137
+4 4 99.9999
+}

@@ -1,0 +1,12 @@
+name=Ir
+
+avgCharge=40.5
+
+chargeFWHM=20.25
+
+protons=81
+
+isotopes={
+203 203 29.524
+205 205 70.476
+}

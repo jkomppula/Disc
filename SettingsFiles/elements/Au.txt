@@ -1,0 +1,11 @@
+name=Au
+
+avgCharge=39.5
+
+chargeFWHM=19.75
+
+protons=79
+
+isotopes={
+197 197 100
+}

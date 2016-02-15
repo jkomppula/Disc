@@ -1,0 +1,11 @@
+name=Tb
+
+avgCharge=32.5
+
+chargeFWHM=16.25
+
+protons=65
+
+isotopes={
+159 159 100
+}

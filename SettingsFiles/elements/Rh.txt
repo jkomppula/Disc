@@ -1,0 +1,11 @@
+name=Rh
+
+avgCharge=22.5
+
+chargeFWHM=11.25
+
+protons=45
+
+isotopes={
+103 103 100
+}

@@ -1,0 +1,12 @@
+name=La
+
+avgCharge=28.5
+
+chargeFWHM=14.25
+
+protons=57
+
+isotopes={
+138 138 0.09
+139 139 99.91
+}

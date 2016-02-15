@@ -1,0 +1,11 @@
+name=Pr
+
+avgCharge=29.5
+
+chargeFWHM=14.75
+
+protons=59
+
+isotopes={
+141 141 100
+}

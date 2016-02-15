@@ -1,0 +1,12 @@
+name=In
+
+avgCharge=24.5
+
+chargeFWHM=12.25
+
+protons=49
+
+isotopes={
+113 113 4.29
+115 115 95.71
+}

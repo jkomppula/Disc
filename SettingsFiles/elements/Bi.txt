@@ -1,0 +1,11 @@
+name=Bi
+
+avgCharge=41.5
+
+chargeFWHM=20.75
+
+protons=83
+
+isotopes={
+209 209 100
+}

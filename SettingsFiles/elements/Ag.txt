@@ -1,0 +1,12 @@
+name=Ag
+
+avgCharge=23.5
+
+chargeFWHM=11.75
+
+protons=47
+
+isotopes={
+107 107 51.839
+109 109 48.161
+}

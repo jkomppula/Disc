@@ -1,0 +1,15 @@
+name=Ge
+
+avgCharge=16
+
+chargeFWHM=8
+
+protons=32
+
+isotopes={
+70 70 20.84
+72 72 27.54
+73 73 7.73
+74 74 36.28
+76 76 7.61
+}

@@ -1,0 +1,12 @@
+name=Re
+
+avgCharge=37.5
+
+chargeFWHM=18.75
+
+protons=75
+
+isotopes={
+185 185 37.4
+187 187 62.6
+}

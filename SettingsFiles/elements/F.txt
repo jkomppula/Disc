@@ -1,0 +1,11 @@
+name=F
+
+avgCharge=4.5
+
+chargeFWHM=2.25
+
+protons=9
+
+isotopes={
+19 19 100
+}

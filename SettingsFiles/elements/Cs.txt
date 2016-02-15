@@ -1,0 +1,11 @@
+name=Cs
+
+avgCharge=27.5
+
+chargeFWHM=13.75
+
+protons=55
+
+isotopes={
+133 133 100
+}

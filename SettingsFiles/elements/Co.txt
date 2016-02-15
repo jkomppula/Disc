@@ -1,0 +1,11 @@
+name=Co
+
+avgCharge=13.5
+
+chargeFWHM=6.75
+
+protons=27
+
+isotopes={
+59 59 100
+}

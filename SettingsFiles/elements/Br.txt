@@ -1,0 +1,12 @@
+name=Br
+
+avgCharge=17.5
+
+chargeFWHM=8.75
+
+protons=35
+
+isotopes={
+79 79 50.69
+81 81 49.31
+}

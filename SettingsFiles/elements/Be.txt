@@ -1,0 +1,11 @@
+name=Be
+
+avgCharge=2
+
+chargeFWHM=1
+
+protons=4
+
+isotopes={
+9 9 100
+}

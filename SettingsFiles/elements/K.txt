@@ -1,0 +1,13 @@
+name=K
+
+avgCharge=9.5
+
+chargeFWHM=4.75
+
+protons=19
+
+isotopes={
+39 39 93.2581
+40 40 0.0117
+41 41 6.7302
+}

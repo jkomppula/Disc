@@ -1,0 +1,12 @@
+name=Ga
+
+avgCharge=15.5
+
+chargeFWHM=7.75
+
+protons=31
+
+isotopes={
+69 69 60.108
+71 71 39.892
+}

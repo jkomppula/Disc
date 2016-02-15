@@ -1,0 +1,12 @@
+name=N
+
+avgCharge=3.5
+
+chargeFWHM=1.75
+
+protons=7
+
+isotopes={
+14 14 99.632
+15 15 0.968
+}

@@ -1,0 +1,12 @@
+name=Va
+
+avgCharge=11.5
+
+chargeFWHM=5.75
+
+protons=23
+
+isotopes={
+50 50 0.25
+51 51 99.75
+}

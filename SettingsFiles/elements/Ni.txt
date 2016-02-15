@@ -1,0 +1,15 @@
+name=Ni
+
+avgCharge=14
+
+chargeFWHM=7
+
+protons=28
+
+isotopes={
+58 58 68.0769
+60 60 26.2231
+61 61 1.1399
+62 62 3.6345
+66 66 0.9256
+}

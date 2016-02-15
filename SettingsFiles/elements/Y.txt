@@ -1,0 +1,11 @@
+name=Y
+
+avgCharge=19.5
+
+chargeFWHM=9.75
+
+protons=39
+
+isotopes={
+89 89 100
+}

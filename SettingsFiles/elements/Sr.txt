@@ -1,0 +1,14 @@
+name=Sr
+
+avgCharge=19
+
+chargeFWHM=9.5
+
+protons=38
+
+isotopes={
+84 84 0.56
+86 86 9.86
+87 87 7
+88 88 82.58
+}

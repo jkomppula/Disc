@@ -1,0 +1,11 @@
+name=Al
+
+avgCharge=6.5
+
+chargeFWHM=3.25
+
+protons=13
+
+isotopes={
+27 27 100
+}

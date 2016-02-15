@@ -1,0 +1,12 @@
+name=Cl
+
+avgCharge=8.5
+
+chargeFWHM=4.25
+
+protons=17
+
+isotopes={
+35 35 75.78
+37 37 24.22
+}
