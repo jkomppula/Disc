@@ -190,7 +190,7 @@ int DipoleScanner::loadSettings(QString filename)
     else
     {
         qDebug() << "DipoleScanner::LoadNetworkSettings: File " << filename << " does not exist!";
-        emit errorMessage("Error!","Settings file",filename,"doe not exist!","");
+        emit errorMessage("Error!","Settings file",filename,"does not exist!","");
         return(1);
     }
 
@@ -206,7 +206,7 @@ int DipoleScanner::openSocket()
     }
 
     telegramSocket = new QCodesysNVSocket(QHostAddress::Any,UDPport);
-    qDebug() << "Port: " << UDPport;
+    //qDebug() << "Port: " << UDPport;
 
 
     if(telegramData != NULL)
@@ -216,8 +216,8 @@ int DipoleScanner::openSocket()
     telegramData = new QCodesysNVTelegram(0);
     telegramData->setVariableTypes(telegramDataVariableList);
     telegramData->setCobId(telegramDataCobId);
-    qDebug() << "Data variables: " << telegramDataVariableList;
-    qDebug() << "Data CobID: " << telegramDataCobId;
+    //qDebug() << "Data variables: " << telegramDataVariableList;
+    //qDebug() << "Data CobID: " << telegramDataCobId;
 
 
     if(telegramStatus != NULL)
@@ -245,7 +245,7 @@ int DipoleScanner::openSocket()
     connect(telegramData,SIGNAL(updated()),this,SLOT(dataReceived()));
     connect(telegramStatus,SIGNAL(updated()),this,SLOT(statusReceived()));
     //connect(telegramSocket,SIGNAL(udpPackageReceived(QString,uint,uint)),this,SLOT(UDPreceived(QString,uint,uint)));
-    qDebug() << "Connected";
+    //qDebug() << "Connected";
 
     telegramSocket->addTelegram(telegramStatus);
     telegramSocket->addTelegram(telegramData);
@@ -255,7 +255,7 @@ int DipoleScanner::openSocket()
 
 void DipoleScanner::UDPreceived(QString IP,uint port,uint bytes)
 {
-    qDebug() << "UDP received";
+    //qDebug() << "UDP received";
 }
 
 int DipoleScanner::triggerScan()
@@ -350,7 +350,7 @@ int DipoleScanner::saveData(QString datafile)
     else
     {
         qDebug() << "DipoleScanner::SaveData: File " << datafile << " can not be opened";
-        emit errorMessage("Error!","Data can not be saved.","File",datafile,"can not be opened");
+        emit errorMessage("Error!","File ",datafile,"can not be opened","");
         return(1);
     }
 
@@ -675,9 +675,9 @@ void DipoleScanner::heartBeat()
     {
         scanTriggered=0;
         timerHeartBeat->stop();
-        qDebug() << "DipoleScanner::HearBeat(): TimeOut, the scan did not initialize!";
+        qDebug() << "DipoleScanner::HearBeat(): TimeOut, the scan was not initialized.";
         endScan(0);
-        emit errorMessage("Error!","Scan TimeOut","The scan did not be initialized","","");
+        emit errorMessage("Error!","Trigger time out.","The scan was not initialized.","","");
     }
     else if ((heartBeatCounter * heartBeatTimeInterval) > (1000*scanTimeOut) && scanRunning == 1 && scanTriggered == 1)
     {
@@ -685,12 +685,12 @@ void DipoleScanner::heartBeat()
         endScan(0);
         timerHeartBeat->stop();
         qDebug() << "DipoleScanner::HearBeat(): TimeOut, the scan did not end!";
-        emit errorMessage("Error!","Scan TimeOut","The scan did not be finished","","");
+        emit errorMessage("Error!","Scan time out","The scan did not end within time limit.","","");
     }
 
     else if (telegramTrigger != NULL &&  telegramSocket != NULL)
     {
-        qDebug() << "Beat number" << heartBeatCounter << " & scanRunning = " << scanRunning << " & scanTriggered = " << scanTriggered << " Time number: " << heartBeatCounter * heartBeatTimeInterval << " of limit " << 1000*triggerTimeOut;
+        //qDebug() << "Beat number" << heartBeatCounter << " & scanRunning = " << scanRunning << " & scanTriggered = " << scanTriggered << " Time number: " << heartBeatCounter * heartBeatTimeInterval << " of limit " << 1000*triggerTimeOut;
 
         if(scanRunning==1)
         {
@@ -833,23 +833,23 @@ void DipoleScanner::endScan(int nonviolent)
         plotter->graph(plotGraph)->clearData();
         plotter->graph(plotGraph)->addData(tempDip,tempCorrectedBeam);
         plotter->replot();
+        emit(updateUI());
     }
 
-
-    emit(updateUI());
 }
 
 void DipoleScanner::addData(double B, double Ibeam,double Idip,double correctedBeam)
 {
 
+    //qDebug() << "Data: " << B << Ibeam << Idip << correctedBeam;
     if (dataMagneticField.size()==0)
     {
         minDipoleCurrent=Idip;
         minMagneticField=B;
-        maxDipoleCurrent=Idip;
-        maxMagneticField=B;
+        maxDipoleCurrent=Idip+0.01*sqrt(Idip*Idip);
+        maxMagneticField=B+0.01*sqrt(B*B);
         minIonCurrent=correctedBeam;
-        maxIonCurrent=correctedBeam;
+        maxIonCurrent=correctedBeam+0.01*sqrt(correctedBeam*correctedBeam);
 
     }
 
@@ -880,7 +880,7 @@ void DipoleScanner::addData(double B, double Ibeam,double Idip,double correctedB
             maxIonCurrent=correctedBeam;
         }
 
-        //qDebug() << x << xI << yI << minIonCurrent << maxIonCurrent << minDipoleCurrent << maxDipoleCurrent << minMagneticField << maxMagneticField;
+        //qDebug() << minIonCurrent << maxIonCurrent << minDipoleCurrent << maxDipoleCurrent << minMagneticField << maxMagneticField;
         plotter->graph(plotGraph)->addData(Idip,correctedBeam);
         plotter->yAxis->setRangeLower(minIonCurrent);
         plotter->yAxis->setRangeUpper(maxIonCurrent);

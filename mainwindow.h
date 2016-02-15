@@ -141,8 +141,6 @@ private slots:
 
     void on_elements_2_clicked();
 
-    void on_settingsOther_clicked();
-
     void on_loadElementsFileButton_clicked();
 
     void on_saveButton_clicked();

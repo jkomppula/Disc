@@ -1,0 +1,12 @@
+name=V
+
+avgCharge=10
+
+chargeFWHM=5
+
+protons=23
+
+isotopes={
+50 50 0.250
+50 50 99.750
+}

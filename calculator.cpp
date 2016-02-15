@@ -682,9 +682,9 @@ int calculator::LoadBasicSettings()
     defaultPlotYmax=settings->value("PlotYmax").toDouble();
 
 
-    if(!CheckIfSettingsExist(settings, "Intensity"))
-        return(1);
-    defaultIntensity=settings->value("Intensity").toDouble();
+    //if(!CheckIfSettingsExist(settings, "Intensity"))
+    //    return(1);
+    //defaultIntensity=settings->value("Intensity").toDouble();
 
     if(LoadSettings(defaultSettingsFiles[defaultSettingsSelected]))
     {

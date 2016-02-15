@@ -1,0 +1,11 @@
+name=I
+
+avgCharge=25
+
+chargeFWHM=10
+
+protons=53
+
+isotopes={
+127 127 100
+}

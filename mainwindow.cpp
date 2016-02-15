@@ -64,21 +64,31 @@ MainWindow::MainWindow(QWidget *parent) :
 
 void MainWindow::updateUIfromScanner(void)
 {
-    double difference=scanner->maxIonCurrent-scanner->minIonCurrent;
+
+    double maxIonCurrent=scanner->maxIonCurrent;
+    if(maxIonCurrent<0 || maxIonCurrent==0)
+    {
+        maxIonCurrent=1.0;
+    }
+    double difference=maxIonCurrent-scanner->minIonCurrent;
+
+
     double minI=scanner->minIonCurrent-0.1*difference;
-    double maxI=scanner->maxIonCurrent+0.1*difference;
+    double maxI=maxIonCurrent+0.1*difference;
+
+
 
     ui->Ymin->setValue(minI);
     ui->yMax->setValue(maxI);
     ui->xMin->setValue(scanner->minDipoleCurrent);
     ui->xMax->setValue(scanner->maxDipoleCurrent);
 
-    ui->MaxCurrent_0->setValue(scanner->maxIonCurrent);
-    ui->MaxCurrent_1->setValue(scanner->maxIonCurrent);
-    ui->MaxCurrent_2->setValue(scanner->maxIonCurrent);
-    ui->MaxCurrent_3->setValue(scanner->maxIonCurrent);
-    ui->MaxCurrent_4->setValue(scanner->maxIonCurrent);
-    ui->MaxCurrent_5->setValue(scanner->maxIonCurrent);
+    ui->MaxCurrent_0->setValue(maxIonCurrent);
+    ui->MaxCurrent_1->setValue(maxIonCurrent);
+    ui->MaxCurrent_2->setValue(maxIonCurrent);
+    ui->MaxCurrent_3->setValue(maxIonCurrent);
+    ui->MaxCurrent_4->setValue(maxIonCurrent);
+    ui->MaxCurrent_5->setValue(maxIonCurrent);
 
 }
 
@@ -647,7 +657,7 @@ void MainWindow::LoadSettings(void)
         elementCalculator.LoadSettings(elementCalculator.defaultSettingsFiles[1]);
         if(!scanner->loadSettings(elementCalculator.defaultSettingsFiles[1]))
         {
-            qDebug() << "Socket will be opened";
+            //qDebug() << "Socket will be opened";
             scanner->openSocket();
         }
         else
@@ -660,7 +670,7 @@ void MainWindow::LoadSettings(void)
         elementCalculator.LoadSettings(elementCalculator.defaultSettingsFiles[2]);
         if(!scanner->loadSettings(elementCalculator.defaultSettingsFiles[2]))
         {
-            qDebug() << "Socket will be opened";
+            //qDebug() << "Socket will be opened";
             scanner->openSocket();
         }
         else
@@ -857,10 +867,6 @@ void MainWindow::on_elements_2_clicked()
     AskElementUpdate();
 }
 
-void MainWindow::on_settingsOther_clicked()
-{
-
-}
 
 void MainWindow::on_loadElementsFileButton_clicked()
 {
